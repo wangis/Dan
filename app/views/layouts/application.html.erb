@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daniel Walsh</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="wrapper">
+	<h1>DANIEL WALSH</h1>
+	<h2>GUITARIST | TROMBONIST</h2>
+	<div class="container">
+		<header>
+			<ul class="menu">
+				<li id="about"><%= link_to("ABOUT", "#") %></li>
+				<li id="gallery"><%= link_to("GALLERY", "#") %></li>
+				<li id="bands"><%= link_to("BANDS", "#") %></li>
+				<li id="teaching"><%= link_to("TEACHING", "#") %></li>
+				<li id="arrangements"><%= link_to("ARRANGEMENTS", "#") %></li>
+				<li id="external"><%= link_to("EXTERNAL", "#") %></li>
+				<li id="calendar"><%= link_to("CALENDAR", "#") %></li>
+				<li id="contact"><%= link_to("CONTACT", "#") %></li>
+			</ul>
+
+			<div class="banner">
+			</div>
+		</header>
+
+		<%= yield %>
+
+	</div>
+</div>
+</body>
+</html>

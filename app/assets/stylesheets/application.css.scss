@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("bg_tile.png");
+	font-family: 'Palatino', serif;
+}
+
+.wrapper {
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+h1 {
+	color: #483318;
+}
+
+h2 {
+	color: #9A7F55;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.container {
+	background: #C9B09A;
+	margin-top: 15px;
+
+$header-height: 148px;
+
+	header {
+		border-top: #9A7F55 solid 5px;
+		border-bottom: #9A7F55 solid 5px;		
+		height: $header-height;
+
+		ul {
+			background: #C6AC7A;
+			width: 314px;
+			display: inline-block;
+
+			> li {
+				font-size: 12px;
+				font-weight: bold;
+				list-style: none;
+				border-right: #fff 1px solid;
+				border-bottom: #fff 1px solid;
+				width: 156px;
+				float: left;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align: center;
+	
+				a {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.banner {
+			height: $header-height;
+			width: 480px;
+			display: inline-block;
+			background: url("banner.jpg");
+		}
+	}
+}
